@@ -1,0 +1,4 @@
+# mux_with_delays
+Timing hazards in a multiplexer
+Simulation as we have done it so far treats the circuits as ideal, i.e., with instantaneous signal changes. However, as we know from the lectures, transition times in digital circuits are nonzero and this can have performance implications, which need to be considered. When designing asynchronous digital circuits (i.e., circuits where information transfer is not dictated by a timekeeping signal such as a clock – note: all combinational circuits are asynchronous), attention must be paid to the possible presence of hazards.  
+By inspection of the circuit, it is visually apparent that not all signal pathways cross the same number of gates, which means they will be affected by varying amounts of delay. Such a condition has the potential to create timing hazards, i.e., output glitches in particular operating conditions.  
